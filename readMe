@@ -1,0 +1,19 @@
+The intent of this program is to calculate the Routh Hurwitz Stability Table given an nth order system
+Hopefully, the program will be able to generate MATLAB code upon completion.
+
+This is written a top-down program. The pseudocode can be seen below.
+
+Obtain the nth order of the system
+While the current iteration is less than the nth order
+    Obtain ith coefficient
+Create nth arrays
+Calculate if order is even or odd
+If the order is even
+    Fill nth array with nth order coefficient, skipping one until at 0th coefficient
+    Fill nth - 1 array with nth-1 order coefficient, skipping one until at 1th coefficient and then place a zero
+If the order is odd
+    Fill nth array with nth-1 order coefficient, skipping one until at 1th coefficient and then place a zero
+    Fill nth - 1 array with nth order coefficient, skipping one until at 0th coefficient
+While current iteration is less than nth - 1
+    Get size of nth & nth - 1 array
+    Calculate (nth - 1) - iteration array
