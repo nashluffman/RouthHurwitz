@@ -1,6 +1,7 @@
 public class UserInput {
     public static void main(String[] args) {
         double systemOrder, i;
+        String suffix;
         TextIO.putln("Please input the order of the system");
         systemOrder = TextIO.getDouble();
         i = 0;
@@ -8,6 +9,7 @@ public class UserInput {
             TextIO.putln("Please input the " + i + "th coefficient");
             i++;
         }
+
 
     }
 }
